@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\projects\olcfontexporter\olcfontloader\olcpixelgameengine.h(856): warning C4244: '=': conversion from 'std::streamoff' to 'uint32_t', possible loss of data
+d:\projects\olcfontexporter\olcfontloader\olcpixelgameengine.h(890): warning C4244: '=': conversion from 'std::streamoff' to 'uint32_t', possible loss of data
+  OlcFontLoader.vcxproj -> D:\Projects\OlcFontExporter\Debug\OlcFontLoader.exe
