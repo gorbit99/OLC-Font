@@ -36,6 +36,10 @@ namespace olc {
 		void DrawString(int32_t x, int32_t y, std::string sText, Pixel col = olc::WHITE, uint32_t scale = 1) {
 			int32_t sx = 0;
 			int32_t sy = 0;
+			//Thanks javid :)
+			Pixel::Mode m = GetPixelMode();
+			if(col.ALPHA != 255)	SetPixelMode(Pixel::ALPHA);
+			else					SetPixelMode(Pixel::MASK);
 			for (auto c : sText)
 			{
 				if (c == '\n')
@@ -66,6 +70,7 @@ namespace olc {
 					sx += 8 * scale;
 				}
 			}
+			SetPixelMode(m);
 		};
 	private:
 		Sprite *fontSprite;
